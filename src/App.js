@@ -10,7 +10,7 @@ function App() {
   };
 
   const deleteContact = (id) => {
-    setContacts(contacts.filter(id));
+    setContacts(contacts.filter(id)); //This is not working yet (Didn't know how to make it)
   };
 
   return (
