@@ -9,7 +9,7 @@ function App() {
     setContacts([...contacts, newContact]);
   };
 
-  const delet = (id) => {
+  const deleteContact = (id) => {
     setContacts(contacts.filter(id));
   };
 
@@ -17,7 +17,7 @@ function App() {
     <div>
       <h1>Contact Manager</h1>
       <ContactForm addContact={addContact} />
-      <ContactList contacts={contacts} deleteContact={delet} />
+      <ContactList contacts={contacts} deleteContact={deleteContact} />
     </div>
   );
 }
